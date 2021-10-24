@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "", sans-serif;
+}
+
+:root {
+  --accent: #47c249;
+  --light: #ffffff;
+  --grey: #f3f3f3;
+  --dark1: #222222;
+  --dark2: #999999;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.dashboard-admin-charts {
+  width: 100%;
+
+  position: relative;
+
+  &__navigation {
+    position: fixed;
+  }
+}
+
+@import "navigation";
