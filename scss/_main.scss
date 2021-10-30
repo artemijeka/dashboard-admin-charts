@@ -1,0 +1,14 @@
+.main {
+  width: calc(100% - 300px);
+  height: 100vh;
+  background-color: var(--light);
+  transition: 500ms;
+
+  &__topbar {
+    
+  }
+
+  &__cards {
+    position: relative;
+  }
+}

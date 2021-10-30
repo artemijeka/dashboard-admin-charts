@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "", sans-serif;
+}
+
+:root {
+  --accent: #30A1DF;
+  --light: #ffffff;
+  --grey: #f3f3f3;
+  --dark1: #222222;
+  --dark2: #999999;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+}

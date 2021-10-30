@@ -1,22 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "", sans-serif;
-}
+@import "common";
 
-:root {
-  --accent: #47c249;
-  --light: #ffffff;
-  --grey: #f3f3f3;
-  --dark1: #222222;
-  --dark2: #999999;
-}
 
-body {
-  height: 100vh;
-  overflow-x: hidden;
-}
 
 .dashboard-admin-charts {
   width: 100%;
@@ -25,7 +9,29 @@ body {
 
   &__navigation {
     position: fixed;
+    &.--active {
+      width: 80px;
+    }
+  }
+
+  &__main {
+    position: absolute;
+    left: 300px;
+    &.--active {
+      width: calc(100% - 80px);
+
+      left: 80px;
+    }
   }
 }
 
+
+
 @import "navigation";
+
+@import "main";
+    @import "topbar";
+        @import "toggle";
+        @import "search";
+        @import "user";
+    @import "cards";

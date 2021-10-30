@@ -38,6 +38,7 @@
             <span class="navigation__title">Message</span>
           </a>
         </li>
+        <li class="navigation__item">
           <a class="navigation__link" href="#">
             <span class="navigation__ico"><ion-icon name="help-circle-outline"></ion-icon></span>
             <span class="navigation__title">Help</span>
@@ -63,11 +64,54 @@
         </li>
       </ul>
     </nav>
-  </div>
+
+    <div class="dashboard-admin-charts__main main">
+
+      <div class="main__topbar topbar">
+        <div class="topbar__toggle toggle"><ion-icon name="menu-outline"></ion-icon></div>
+
+        <div class="topbar__search search">
+          <label class="search__label"> 
+            <input class="search__input" type="text" placeholder="Search here">
+            <ion-icon class="search__ico" name="search-outline"></ion-icon>
+          </label>
+        </div>
+
+        <div class="topbar__user user">
+          <img src="./img/user.jpg" alt="" class="user__img">
+        </div>
+      </div><!-- /.main__topbar -->
+
+      <div class="main__cards cards">
+        <div class="cards__item">
+          <div class="cards__item-number">1,504</div>
+          <div class="cards__item-name">Daily Views</div>
+          <div class="cards__item-ico"><ion-icon name="eye-outline"></ion-icon></div>
+        </div>
+        <div class="cards__item">
+          <div class="cards__item-number">80</div>
+          <div class="cards__item-name">Sales</div>
+          <div class="cards__item-ico"><ion-icon name="cart-outline"></ion-icon></div>
+        </div>
+        <div class="cards__item">
+          <div class="cards__item-number">200</div>
+          <div class="cards__item-name">Comments</div>
+          <div class="cards__item-ico"><ion-icon name="chatbubbles-outline"></ion-icon></div>
+        </div>
+        <div class="cards__item">
+          <div class="cards__item-number">$7,842</div>
+          <div class="cards__item-name">Earning</div>
+          <div class="cards__item-ico"><ion-icon name="cash-outline"></ion-icon></div>
+        </div>
+      </div>
+
+    </div><!-- /.dashboard-admin-charts__main -->
+  </div><!-- /.dashboard-admin-charts -->
 
 
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+  <script type="module" src="./js/script.js"></script>
 </body>
 </html>
