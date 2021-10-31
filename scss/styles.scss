@@ -30,8 +30,8 @@
 @import "navigation";
 
 @import "main";
-    @import "topbar";
-        @import "toggle";
-        @import "search";
-        @import "user";
-    @import "cards";
+    @import "main/topbar";
+        @import "main/topbar/toggle";
+        @import "main/topbar/search";
+        @import "main/topbar/user";
+    @import "main/cards";

@@ -141,7 +141,6 @@ body {
 .main__cards {
   position: relative;
 }
-
 .topbar {
   width: 100%;
   height: 60px;
@@ -236,5 +235,42 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
   padding: 20px;
+}
+.cards__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  background-color: var(--light);
+  padding: 30px;
+  -webkit-box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  position: relative;
+}
+.cards__item-number {
+  font-weight: 500;
+  font-size: 2.5em;
+  color: var(--accent);
+  position: relative;
+}
+.cards__item-name {
+  color: var(--dark2);
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+.cards__item-ico {
+  font-size: 3.5em;
+  color: var(--dark2);
+}
+.cards__item:hover {
+  background-color: var(--accent);
+}
+.cards__item:hover .cards__item-number, .cards__item:hover .cards__item-name, .cards__item:hover .cards__item-ico {
+  color: var(--light);
 }
