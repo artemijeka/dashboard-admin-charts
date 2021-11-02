@@ -274,3 +274,51 @@ body {
 .cards__item:hover .cards__item-number, .cards__item:hover .cards__item-name, .cards__item:hover .cards__item-ico {
   color: var(--light);
 }
+
+.details {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 30px;
+  padding: 20px;
+  margin-top: 10px;
+  position: relative;
+}
+.details__recent {
+  display: grid;
+  min-height: 500px;
+  background: var(--light);
+  padding: 20px;
+  -webkit-box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  position: relative;
+}
+.details__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.details__title {
+  font-weight: 600;
+  color: var(--accent);
+}
+.details__btn {
+  padding: 5px 10px;
+  background: var(--accent);
+  text-decoration: none;
+  color: var(--light);
+  border-radius: 6px;
+  position: relative;
+}
+.details__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
