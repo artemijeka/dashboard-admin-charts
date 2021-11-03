@@ -382,17 +382,6 @@ body {
   background: var(--light);
   position: relative;
 }
-.customers__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
 .customers__title {
   font-weight: 600;
   color: var(--accent);
@@ -400,6 +389,7 @@ body {
 .customers__img {
   width: 40px;
   height: 40px;
+  display: inline-block;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
@@ -414,6 +404,10 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+}
+.customers table {
+  width: 100%;
+  border-collapse: collapse;
 }
 .customers table tr:hover {
   background: var(--accent);
