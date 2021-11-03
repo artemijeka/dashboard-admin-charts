@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
   <title>Admin Dashboard + Charts | Панель администратора + Диаграммы</title>
   <link rel="stylesheet" href="./css/styles.min.css">
 </head>
+
 <body>
-  
+
 
 
   <div class="dashboard-admin-charts">
@@ -16,49 +18,65 @@
       <ul class="navigation__list">
         <li class="navigation__item --main">
           <a class="navigation__link" href="#">
-            <span class="navigation__ico"><ion-icon name="logo-apple"></ion-icon></span>
+            <span class="navigation__ico">
+              <ion-icon name="logo-apple"></ion-icon>
+            </span>
             <span class="navigation__title">Brand Name</span>
           </a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="#">
-            <span class="navigation__ico"><ion-icon name="home-outline"></ion-icon></span>
+            <span class="navigation__ico">
+              <ion-icon name="home-outline"></ion-icon>
+            </span>
             <span class="navigation__title">Dashboard</span>
           </a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="#">
-            <span class="navigation__ico"><ion-icon name="people-outline"></ion-icon></span>
+            <span class="navigation__ico">
+              <ion-icon name="people-outline"></ion-icon>
+            </span>
             <span class="navigation__title">Customers</span>
           </a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="#">
-            <span class="navigation__ico"><ion-icon name="chatbox-ellipses-outline"></ion-icon></span>
+            <span class="navigation__ico">
+              <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+            </span>
             <span class="navigation__title">Message</span>
           </a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="#">
-            <span class="navigation__ico"><ion-icon name="help-circle-outline"></ion-icon></span>
+            <span class="navigation__ico">
+              <ion-icon name="help-circle-outline"></ion-icon>
+            </span>
             <span class="navigation__title">Help</span>
           </a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="#">
-            <span class="navigation__ico"><ion-icon name="cog-outline"></ion-icon></span>
+            <span class="navigation__ico">
+              <ion-icon name="cog-outline"></ion-icon>
+            </span>
             <span class="navigation__title">Settings</span>
           </a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="#">
-            <span class="navigation__ico"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <span class="navigation__ico">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+            </span>
             <span class="navigation__title">Password</span>
           </a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="#">
-            <span class="navigation__ico"><ion-icon name="log-out-outline"></ion-icon></span>
+            <span class="navigation__ico">
+              <ion-icon name="log-out-outline"></ion-icon>
+            </span>
             <span class="navigation__title">Sign out</span>
           </a>
         </li>
@@ -68,10 +86,12 @@
     <div class="dashboard-admin-charts__main main">
 
       <div class="main__topbar topbar">
-        <div class="topbar__toggle toggle"><ion-icon name="menu-outline"></ion-icon></div>
+        <div class="topbar__toggle toggle">
+          <ion-icon name="menu-outline"></ion-icon>
+        </div>
 
         <div class="topbar__search search">
-          <label class="search__label"> 
+          <label class="search__label">
             <input class="search__input" type="text" placeholder="Search here">
             <ion-icon class="search__ico" name="search-outline"></ion-icon>
           </label>
@@ -88,28 +108,36 @@
             <div class="cards__item-number">1,245</div>
             <div class="cards__item-name">Daily Views</div>
           </div>
-          <div class="cards__item-ico"><ion-icon name="eye-outline"></ion-icon></div>
+          <div class="cards__item-ico">
+            <ion-icon name="eye-outline"></ion-icon>
+          </div>
         </div>
         <div class="cards__item">
           <div class="cards__item-info">
             <div class="cards__item-number">56</div>
             <div class="cards__item-name">Sales</div>
           </div>
-          <div class="cards__item-ico"><ion-icon name="cart-outline"></ion-icon></div>
+          <div class="cards__item-ico">
+            <ion-icon name="cart-outline"></ion-icon>
+          </div>
         </div>
         <div class="cards__item">
           <div class="cards__item-info">
             <div class="cards__item-number">340</div>
             <div class="cards__item-name">Comments</div>
           </div>
-          <div class="cards__item-ico"><ion-icon name="chatbubbles-outline"></ion-icon></div>
+          <div class="cards__item-ico">
+            <ion-icon name="chatbubbles-outline"></ion-icon>
+          </div>
         </div>
         <div class="cards__item">
           <div class="cards__item-info">
             <div class="cards__item-number">$5,124</div>
             <div class="cards__item-name">Earning</div>
           </div>
-          <div class="cards__item-ico"><ion-icon name="cash-outline"></ion-icon></div>
+          <div class="cards__item-ico">
+            <ion-icon name="cash-outline"></ion-icon>
+          </div>
         </div>
       </div><!-- /.main__cards -->
 
@@ -133,71 +161,88 @@
                 <td>Star Refrigerator</td>
                 <td>$1200</td>
                 <td>Paid</td>
-                <td><span class="status delivered">Delivered</span></td>
+                <td><span class="details__status --delivered">Delivered</span></td>
               </tr>
               <tr>
                 <td>Window Coolers</td>
                 <td>$111</td>
                 <td>Due</td>
-                <td><span class="status pending">Pending</span></td>
+                <td><span class="details__status --pending">Pending</span></td>
               </tr>
               <tr>
                 <td>Speakers</td>
                 <td>$620</td>
                 <td>Paid</td>
-                <td><span class="status return">Return</span></td>
+                <td><span class="details__status --return">Return</span></td>
               </tr>
               <tr>
                 <td>HP Laptop</td>
                 <td>$1100</td>
                 <td>Due</td>
-                <td><span class="status inprogress">In Progress</span></td>
+                <td><span class="details__status --inprogress">In Progress</span></td>
               </tr>
               <tr>
                 <td>Apple Watch</td>
                 <td>$1200</td>
                 <td>Paid</td>
-                <td><span class="status delivered">Delivered</span></td>
+                <td><span class="details__status --delivered">Delivered</span></td>
               </tr>
               <tr>
                 <td>Wall Fan</td>
                 <td>$110</td>
                 <td>Paid</td>
-                <td><span class="status pending">Pending</span></td>
+                <td><span class="details__status --pending">Pending</span></td>
               </tr>
               <tr>
                 <td>Adidas Shoes</td>
                 <td>$620</td>
                 <td>Paid</td>
-                <td><span class="status return">Return</span></td>
+                <td><span class="details__status --return">Return</span></td>
               </tr>
               <tr>
                 <td>Denim Shirts</td>
                 <td>$110</td>
                 <td>Due</td>
-                <td><span class="status inprogress">In Progress</span></td>
+                <td><span class="details__status --inprogress">In Progress</span></td>
               </tr>
               <tr>
                 <td>Casual Shoes</td>
                 <td>$521</td>
                 <td>Paid</td>
-                <td><span class="status pending">Pending</span></td>
+                <td><span class="details__status --pending">Pending</span></td>
               </tr>
               <tr>
                 <td>Wall Fan</td>
                 <td>$110</td>
                 <td>Paid</td>
-                <td><span class="status pending">Pending</span></td>
+                <td><span class="details__status --pending">Pending</span></td>
               </tr>
               <tr>
                 <td>Denim Shirts</td>
                 <td>$110</td>
                 <td>Due</td>
-                <td><span class="status inprogress">In Progress</span></td>
+                <td><span class="details__status --inprogress">In Progress</span></td>
               </tr>
             </tbody>
           </table>
-        </div>
+        </div><!-- /.details__recent -->
+        <div class="main__customers customers">
+          <div class="customers__header">
+            <h2 class="customers__title">Recent Customers</h2>
+            <table>
+              <tr>
+                <td width="60px">
+                  <span class="customers__img">
+                    <img src="./img/img1.jpg" alt="img">
+                  </span>
+                </td>
+                <td>
+                  <h4>David<br><span>Italy</span></h4>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div><!-- /.main__customers -->
       </div><!-- /.main__details -->
 
     </div><!-- /.dashboard-admin-charts__main -->
@@ -209,4 +254,5 @@
   <!-- <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
   <script type="module" src="./js/script.js"></script>
 </body>
+
 </html>
