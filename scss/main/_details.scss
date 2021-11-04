@@ -8,6 +8,10 @@
   margin-top: 10px;
   position: relative;
 
+  @media screen and (max-width: 1279.98px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   &__recent {
     display: grid;
     min-height: 500px;
@@ -17,6 +21,10 @@
     border-radius: 20px;
 
     position: relative;
+
+    @media screen and (max-width: 575.98px) {
+      overflow-x: auto;
+    }
   }
 
   &__header {
@@ -66,6 +74,7 @@
     tbody {
       tr {
         color: var(--dark1);
+        white-space: nowrap;
 
         &:not(:last-of-type) {
           border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -98,6 +107,7 @@
     font-size: 14px;
     font-weight: 500;
     color: var(--light);
+    white-space: nowrap;
     &.--delivered {
       background: #8de02c;
     }

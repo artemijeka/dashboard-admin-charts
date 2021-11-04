@@ -4,8 +4,30 @@
   background-color: var(--light);
   transition: 500ms;
 
+  @media screen and (max-width: 991.98px) {
+    width: 100%;
+    left: 0;
+  }
+
+  &.--active {
+    @media screen and (max-width: 991.98px) {
+      left: 300px;
+    }
+
+    @media screen and (max-width: 480px) {
+      left: calc(100% - 70px);
+    }
+
+    .toggle {
+      @media screen and (max-width: 480px) {
+        color: var(--light);
+        position: fixed;
+        left: unset;
+      }
+    }
+  }
+
   &__topbar {
-    
   }
 
   &__cards {
@@ -13,10 +35,8 @@
   }
 
   &__details {
-    
   }
 
   &__customers {
-
   }
 }

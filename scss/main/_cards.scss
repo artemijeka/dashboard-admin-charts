@@ -5,6 +5,13 @@
   grid-gap: 30px;
   padding: 20px;
 
+  @media screen and (max-width: 1439.98px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 575.98px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   &__item {
     display: flex;
     justify-content: space-between;

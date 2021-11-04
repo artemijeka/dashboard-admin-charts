@@ -6,6 +6,32 @@
   transition: 0.5s;
   overflow: hidden;
 
+  // position: relative;
+  left: 0;
+
+  @media screen and (max-width: 991.98px) {
+   left: -300px; 
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    left: -100%;
+    z-index: 10;
+  }
+
+  &.--active {
+    @media screen and (max-width: 991.98px) {
+      width: 300px;
+
+      left: 0;
+    }
+    @media screen and (max-width: 480px) {
+      width: 100%;
+
+      // left: 0;
+    }
+  }
+
   &__list {
     width: 100%;
     
