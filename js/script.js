@@ -1,9 +1,14 @@
 import { topbar__toggle } from './_topbar__toggle.js';
 topbar__toggle();
 
+import { charts } from './_charts.js';
+charts();
 
 
 document.addEventListener('DOMContentLoaded', function () {
+
+
+
   let navigation__itemList = document.querySelectorAll('.navigation__item');
 
   navigation__itemList.forEach(function (navigation__item) {
@@ -16,4 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     e.target.classList.add('--active');
   }
+
+
+
 });

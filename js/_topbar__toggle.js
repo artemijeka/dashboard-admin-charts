@@ -1,9 +1,5 @@
 export function topbar__toggle() {
-
-
-
   document.addEventListener('DOMContentLoaded', function() { 
-    console.log('test');
 
 
 
@@ -19,7 +15,4 @@ export function topbar__toggle() {
 
 
   });
-
-
-
 }
