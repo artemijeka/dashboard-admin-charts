@@ -8,19 +8,12 @@
   position: relative;
 
   &__navigation {
-    position: fixed;
     &.--active {
-      width: 80px;
     }
   }
 
   &__main {
-    position: absolute;
-    left: 300px;
     &.--active {
-      width: calc(100% - 80px);
-
-      left: 80px;
     }
   }
 }

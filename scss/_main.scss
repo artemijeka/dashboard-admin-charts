@@ -1,8 +1,11 @@
 .main {
-  width: calc(100% - 300px);
+  width: calc(100% - 80px);
   height: 100vh;
   background-color: var(--light);
   transition: 500ms;
+
+  position: absolute;
+  left: 80px;
 
   @media screen and (max-width: 991.98px) {
     width: 100%;
@@ -10,6 +13,9 @@
   }
 
   &.--active {
+    width: calc(100% - 300px);
+    
+    left: 300px;
     @media screen and (max-width: 991.98px) {
       left: 300px;
     }

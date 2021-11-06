@@ -1,26 +1,11 @@
 export function charts() {
 
-  // TODO:
-  // Правильное перестроение графиков надо сделать при resize viewport!
 
-  var charts__sources = null, 
-      charts__earnings = null;
+
+  var sources, charts__sources, earnings, charts__earnings;
 
   document.addEventListener('DOMContentLoaded', function () {
-    viewCharts();
-  });
-
-  window.addEventListener('resize', function () {
-    viewCharts();
-  });
-
-
-
-  function viewCharts() {
-    if (charts__sources) {
-      charts__sources.destroy();
-    }
-    var sources = document.getElementById('charts__sources').getContext('2d');
+    sources = document.getElementById('charts__sources').getContext('2d');
     charts__sources = new Chart(sources, {
       type: 'polarArea',
       data: {
@@ -42,12 +27,10 @@ export function charts() {
         }]
       },
       options: {
-        // onResize: function (charts__sources, size) {
-        //   // charts__sources.options.legend.display = size.height > 128;
-        //   // ... do whatever changes you need to have your chart display correctly ...
-        //   charts__sources.update();
-        // },
+        // Boolean - whether or not the chart should be responsive and resize when the browser does.
         responsive: true,
+        // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
+        maintainAspectRatio: false,
         // scales: {
         //   y: {
         //     beginAtZero: true
@@ -58,10 +41,7 @@ export function charts() {
 
 
 
-    if (charts__earnings) {
-      charts__earnings.destroy();
-    }
-    var earnings = document.getElementById('charts__earnings').getContext('2d');
+    earnings = document.getElementById('charts__earnings').getContext('2d');
     charts__earnings = new Chart(earnings, {
       type: 'bar',
       data: {
@@ -86,12 +66,10 @@ export function charts() {
         }]
       },
       options: {
-        // onResize: function (charts__earnings, size) {
-        //   // charts__earnings.options.legend.display = size.height > 128;
-        //   // ... do whatever changes you need to have your chart display correctly ...
-        //   charts__earnings.update();
-        // },
+        // Boolean - whether or not the chart should be responsive and resize when the browser does.
         responsive: true,
+        // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
+        maintainAspectRatio: false,
         // scales: {
         //     y: {
         //         beginAtZero: true
@@ -99,5 +77,22 @@ export function charts() {
         // }
       }
     });
-  }
+  });
+
+
+
+  // window.onresize = function () {
+  //   console.log(window.innerWidth);
+  //   var width = window.innerWidth;
+  //   // if ( width < 991 ) {
+  //   //   sources.canvas.width = '100%';
+  //   // } else {
+  //   //   earnings.canvas.width = '100%';
+  //   // }
+  //   charts__sources.resize();
+  //   charts__earnings.resize();
+  // }
+
+
+
 }

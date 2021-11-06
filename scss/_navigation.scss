@@ -1,12 +1,12 @@
 .navigation {
-  width: 300px;
+  width: 80px;
   height: 100%;
   background-color: var(--accent);
   border-left: 10px solid var(--accent);
   transition: 0.5s;
   overflow: hidden;
-
-  // position: relative;
+  
+  position: fixed;
   left: 0;
 
   @media screen and (max-width: 991.98px) {
@@ -20,6 +20,7 @@
   }
 
   &.--active {
+    width: 300px;
     @media screen and (max-width: 991.98px) {
       width: 300px;
 

@@ -24,23 +24,8 @@ body {
   width: 100%;
   position: relative;
 }
-.dashboard-admin-charts__navigation {
-  position: fixed;
-}
-.dashboard-admin-charts__navigation.--active {
-  width: 80px;
-}
-.dashboard-admin-charts__main {
-  position: absolute;
-  left: 300px;
-}
-.dashboard-admin-charts__main.--active {
-  width: calc(100% - 80px);
-  left: 80px;
-}
-
 .navigation {
-  width: 300px;
+  width: 80px;
   height: 100%;
   background-color: var(--accent);
   border-left: 10px solid var(--accent);
@@ -48,6 +33,7 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
   overflow: hidden;
+  position: fixed;
   left: 0;
 }
 @media screen and (max-width: 991.98px) {
@@ -61,6 +47,9 @@ body {
     left: -100%;
     z-index: 10;
   }
+}
+.navigation.--active {
+  width: 300px;
 }
 @media screen and (max-width: 991.98px) {
   .navigation.--active {
@@ -156,18 +145,24 @@ body {
 }
 
 .main {
-  width: calc(100% - 300px);
+  width: calc(100% - 80px);
   height: 100vh;
   background-color: var(--light);
   -webkit-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms;
+  position: absolute;
+  left: 80px;
 }
 @media screen and (max-width: 991.98px) {
   .main {
     width: 100%;
     left: 0;
   }
+}
+.main.--active {
+  width: calc(100% - 300px);
+  left: 300px;
 }
 @media screen and (max-width: 991.98px) {
   .main.--active {
@@ -351,7 +346,6 @@ body {
   grid-template-columns: 2fr 1fr;
   grid-gap: 30px;
   padding: 20px;
-  margin-top: 10px;
   position: relative;
 }
 @media screen and (max-width: 1279.98px) {
@@ -513,24 +507,33 @@ body {
 
 .charts {
   width: 100%;
+  height: auto;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 30px;
+  grid-template-columns: calc(35% - 15px) calc(65% - 15px);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 20px;
 }
-@media screen and (max-width: 1279.98px) {
+@media screen and (max-width: 991.98px) {
   .charts {
-    grid-template-columns: 1fr;
-    height: auto;
+    grid-template-columns: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 .charts__box {
-  width: 100%;
-  min-height: 200px;
+  width: auto;
+  height: calc(250px + 10vw);
   background: #fff;
-  padding: 20px;
   -webkit-box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
           box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
+  padding: 20px;
   position: relative;
+}
+@media screen and (max-width: 991.98px) {
+  .charts__box.--n2 {
+    margin-top: 30px;
+  }
 }
