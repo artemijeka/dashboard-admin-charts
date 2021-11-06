@@ -1,12 +1,10 @@
 export function charts() {
-
-
-
-  var sources, charts__sources, earnings, charts__earnings;
-
   document.addEventListener('DOMContentLoaded', function () {
-    sources = document.getElementById('charts__sources').getContext('2d');
-    charts__sources = new Chart(sources, {
+
+
+
+    var sources = document.getElementById('charts__sources').getContext('2d');
+    var charts__sources = new Chart(sources, {
       type: 'polarArea',
       data: {
         labels: ['Facebook', 'Youtube', 'Amazon'],
@@ -40,9 +38,8 @@ export function charts() {
     });
 
 
-
-    earnings = document.getElementById('charts__earnings').getContext('2d');
-    charts__earnings = new Chart(earnings, {
+    var earnings = document.getElementById('charts__earnings').getContext('2d');
+    var charts__earnings = new Chart(earnings, {
       type: 'bar',
       data: {
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
@@ -77,22 +74,8 @@ export function charts() {
         // }
       }
     });
+
+
+
   });
-
-
-
-  // window.onresize = function () {
-  //   console.log(window.innerWidth);
-  //   var width = window.innerWidth;
-  //   // if ( width < 991 ) {
-  //   //   sources.canvas.width = '100%';
-  //   // } else {
-  //   //   earnings.canvas.width = '100%';
-  //   // }
-  //   charts__sources.resize();
-  //   charts__earnings.resize();
-  // }
-
-
-
 }
